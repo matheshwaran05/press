@@ -1,0 +1,27 @@
+p{
+    color: brown;
+    border: 70%;
+    border-color: black;
+    padding: 5px;
+    margin: 5px;
+    background-color:mediumaquamarine;
+    text-align: center;
+
+}
+h1{
+text-align: center;
+color: magenta;
+}
+h2{
+    text-align: center;
+    color: rgb(from color r g b);
+}
+h3{
+    text-align: center;
+    color: olive;
+    border: 5px;
+    border-style: dotted;
+    background-color:skyblue;
+    padding: 5px;
+    margin: 5px;
+}

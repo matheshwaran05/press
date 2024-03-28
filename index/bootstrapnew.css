@@ -1,0 +1,42 @@
+li{
+    float: left;
+    margin: 30px;
+    overflow: hidden;
+    color: white; 
+    margin-left: 70px;
+} 
+li:hover{
+    color: aqua;
+    font-size: larger;
+}
+
+#nav{
+    background-color: black;
+    overflow: hidden;
+    margin-top: -30px;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+
+#search{
+    margin-left: 180px;
+    margin-top: -25px;         
+}
+h1{
+    text-align: center;
+    color: bisque;
+    background-color: aquamarine;
+}
+body{
+    @media (max-width: 600px) {
+        nav, article {width: 100%;height: auto;}
+    }
+}
+
+#aa{
+width: 10%;
+transition: width 3s;
+}
+#aa:hover{
+    width: 80%;
+}

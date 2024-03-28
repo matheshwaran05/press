@@ -1,0 +1,87 @@
+ <!-- <!DOCTYPE html>  
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sparrow try catch error</title>
+</head>
+<body>
+  <h3>JAVA SCRIPt USING GET ERROR</h3>
+  <h4>Please enter your number 5 >= 10</h4>
+
+  <input id="demo" type="text">
+  <button type="button" onclick="myFunction()">click the input</button>
+
+  <p id="p01"></p>
+
+  <script>
+  function myFunction(){
+ const message = document.getElementById("p01");
+ message.innerHTML= "";
+ let x=document.getElementById("demo").value;
+ try{
+  if(x=="") throw "it is empty";
+  if(isNaN(x)) throw "it is not a number";
+  x=Number(x);
+  if(x>10) throw "is greatest number";
+  if(x<5) throw "is lowest number";
+ }
+ catch(err){
+  message.innerHTML = "Input"+err;
+ }
+ finally{
+  document.getElementById("demo").value="";
+ }
+ }
+</script> 
+</body>
+</html>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .fade-in {
+      display: inline-block;
+      overflow: hidden;
+    }
+
+    .fade-in span {
+      display: inline-block;
+      opacity: 0;
+      animation: fadeIn 1s ease-out;
+      animation-fill-mode: forwards;
+    }
+
+    /* Adjust the delay for each letter */
+    .fade-in span:nth-child(1) { animation-delay: 0.2s; }
+    .fade-in span:nth-child(2) { animation-delay: 0.4s; }
+    .fade-in span:nth-child(3) { animation-delay: 0.6s; }
+    .fade-in span:nth-child(4) { animation-delay: 0.8s; }
+    .fade-in span:nth-child(5) { animation-delay: 1s; }
+  </style>
+</head>
+<body>
+
+  <div class="fade-in">
+    <span><b>H</b></span>
+    <span>e</span>
+    <span>l</span>
+    <span>l</span>
+    <span>o</span>
+  </div>
+
+</body>
+</html>
